@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="Moon.Mvvm.Wpf/Moon.Mvvm.Wpf.csproj" />
+  <Project Path="Moon.Mvvm/Moon.Mvvm.csproj" Id="79ce9cb7-387d-45ce-a09b-4cb0f63373af" />
+  <Project Path="Moon.Services/Moon.Services.csproj" Id="614710a8-eaf5-4b41-8253-defb26035ddd" />
+  <Project Path="Moon.Wpf.Controls/Moon.Wpf.Controls.csproj" Id="1468a6c7-26da-4e91-bc87-4957f8cc6142" />
+  <Project Path="MoonWpfToolkit/MoonWpfToolkit.csproj" Id="fc6caf5f-95f6-4334-8872-872b91ce2840" />
+</Solution>
