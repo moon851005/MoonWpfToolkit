@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/方案項目/">
+    <File Path="version.json" />
+  </Folder>
   <Project Path="Moon.Mvvm.Wpf/Moon.Mvvm.Wpf.csproj" />
   <Project Path="Moon.Mvvm/Moon.Mvvm.csproj" Id="79ce9cb7-387d-45ce-a09b-4cb0f63373af" />
   <Project Path="Moon.Services/Moon.Services.csproj" Id="614710a8-eaf5-4b41-8253-defb26035ddd" />

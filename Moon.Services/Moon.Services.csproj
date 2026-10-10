@@ -5,6 +5,42 @@
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <ImplicitUsings>enable</ImplicitUsings>
+
+	<!--忽略警告-->
+	<NoWarn>$(NoWarn);IDE0044</NoWarn>
+	<NoWarn>$(NoWarn);CA1416</NoWarn>
+	<NoWarn>$(NoWarn);CA1507</NoWarn>
+	<NoWarn>$(NoWarn);CA1822</NoWarn>
+	<NoWarn>$(NoWarn);CA2255</NoWarn>
+	<NoWarn>$(NoWarn);CS8600</NoWarn>
+	<NoWarn>$(NoWarn);CS8601</NoWarn>
+	<NoWarn>$(NoWarn);CS8602</NoWarn>
+	<NoWarn>$(NoWarn);CS8603</NoWarn>
+	<NoWarn>$(NoWarn);CS8604</NoWarn>
+	<NoWarn>$(NoWarn);CS8605</NoWarn>
+	<NoWarn>$(NoWarn);CS8612</NoWarn>
+	<NoWarn>$(NoWarn);CS8618</NoWarn>
+	<NoWarn>$(NoWarn);CS8622</NoWarn>
+	<NoWarn>$(NoWarn);CS8766</NoWarn>
+	<NoWarn>$(NoWarn);NU1902</NoWarn>
+	<NoWarn>$(NoWarn);NU1903</NoWarn>	  <!--忽略警告-->
+	  <NoWarn>$(NoWarn);IDE0044</NoWarn>
+	  <NoWarn>$(NoWarn);CA1416</NoWarn>
+	  <NoWarn>$(NoWarn);CA1507</NoWarn>
+	  <NoWarn>$(NoWarn);CA1822</NoWarn>
+	  <NoWarn>$(NoWarn);CA2255</NoWarn>
+	  <NoWarn>$(NoWarn);CS8600</NoWarn>
+	  <NoWarn>$(NoWarn);CS8601</NoWarn>
+	  <NoWarn>$(NoWarn);CS8602</NoWarn>
+	  <NoWarn>$(NoWarn);CS8603</NoWarn>
+	  <NoWarn>$(NoWarn);CS8604</NoWarn>
+	  <NoWarn>$(NoWarn);CS8605</NoWarn>
+	  <NoWarn>$(NoWarn);CS8612</NoWarn>
+	  <NoWarn>$(NoWarn);CS8618</NoWarn>
+	  <NoWarn>$(NoWarn);CS8622</NoWarn>
+	  <NoWarn>$(NoWarn);CS8766</NoWarn>
+	  <NoWarn>$(NoWarn);NU1902</NoWarn>
+	  
   </PropertyGroup>
 
   <ItemGroup>

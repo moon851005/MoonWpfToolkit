@@ -1,0 +1,10 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <FontFamily x:Key="SegoeFluentIcons">pack://application:,,,/Moon.Mvvm.Wpf;component/Assets/FontIcons/#Segoe Fluent Icons</FontFamily>
+    <FontFamily x:Key="FontAwesome5SolidIcons">pack://application:,,,/Moon.Mvvm.Wpf;component/Assets/FontIcons/#Font Awesome 5 Free Solid</FontFamily>
+    <FontFamily x:Key="FontAwesome5RegularIcons">pack://application:,,,/Moon.Mvvm.Wpf;component/Assets/FontIcons/#Font Awesome 5 Free Regular</FontFamily>
+    <FontFamily x:Key="FontAwesomeSolidIcons">pack://application:,,,/Moon.Mvvm.Wpf;component/Assets/FontIcons/#Font Awesome 6 Free Solid</FontFamily>
+    <FontFamily x:Key="FontAwesomeRegularIcons">pack://application:,,,/Moon.Mvvm.Wpf;component/Assets/FontIcons/#Font Awesome 6 Free Regular</FontFamily>
+    <FontFamily x:Key="MaterialIcons">pack://application:,,,/Moon.Mvvm.Wpf;component/Assets/FontIcons/#Material Icons</FontFamily>
+    <FontFamily x:Key="MaterialSymbols">pack://application:,,,/Moon.Mvvm.Wpf;component/Assets/FontIcons/#Material Symbols Outlined Thin</FontFamily>
+</ResourceDictionary>

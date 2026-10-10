@@ -1,0 +1,13 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:cvt="clr-namespace:Moon.Mvvm.Wpf.Converters">
+    <cvt:CVT_Base64ToImage x:Key="Base64ToImageConverter" />
+    <cvt:CVT_BooleanOr x:Key="BooleanOrConverter" />
+    <cvt:CVT_BoolToVisibility x:Key="BoolToVisibilityConverter" />
+    <cvt:CVT_Thickness x:Key="ThicknessConverter" />
+    <cvt:CVT_BorderRadius x:Key="BorderRadiusConverter" />
+    <cvt:CVT_ColorToBrush x:Key="ColorToBrushConverter" />
+    <cvt:CVT_Compare x:Key="CompareConverter" />
+    <cvt:CVT_InvertedBool x:Key="InvertedBoolConverter" />
+    <cvt:CVT_Time x:Key="TimeConverter" />
+</ResourceDictionary>
