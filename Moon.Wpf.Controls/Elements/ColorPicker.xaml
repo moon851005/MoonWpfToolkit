@@ -226,7 +226,7 @@
                                     </Border>
 
                                     <!-- 色相滑桿 -->
-                                    <Slider x:Name="PART_HueSlider"
+                                    <Slider x:Name="PART_HueSlider" IsMoveToPointEnabled="True"
                                             Margin="0,8,0,0"
                                             Minimum="0" Maximum="360"
                                             OverridesDefaultStyle="True"
@@ -269,7 +269,7 @@
                                             </Grid>
                                         </Border>
                                         <!-- 互動 Slider（透明軌道，疊在漸層之上） -->
-                                        <Slider x:Name="PART_AlphaSlider"
+                                        <Slider x:Name="PART_AlphaSlider" IsMoveToPointEnabled="True"
                                                 Minimum="0" Maximum="255"
                                                 OverridesDefaultStyle="True"
                                                 Template="{StaticResource ColorPicker.AlphaSliderTemplate}"/>
@@ -287,17 +287,17 @@
                                     <StackPanel x:Name="PART_HexSliders" Margin="0,6,0,0" Visibility="Visible">
                                         <Grid ColumnDefinitions="14,4,*,4,48" Margin="0,0,0,3">
                                             <TextBlock Text="R" FontSize="11" VerticalAlignment="Center" Foreground="{DynamicResource TextControlForeground}"/>
-                                            <Slider x:Name="PART_HexRSlider" Grid.Column="2" Minimum="0" Maximum="255" OverridesDefaultStyle="True" Template="{StaticResource ColorPicker.ChannelSliderTemplate}"/>
+                                            <Slider x:Name="PART_HexRSlider" IsMoveToPointEnabled="True" Grid.Column="2" Minimum="0" Maximum="255" OverridesDefaultStyle="True" Template="{StaticResource ColorPicker.ChannelSliderTemplate}"/>
                                             <TextBox x:Name="PART_HexRTextBox" Grid.Column="4" Padding="4,5" FontSize="11" MaxLength="3" TextAlignment="Center" VerticalContentAlignment="Center"/>
                                         </Grid>
                                         <Grid ColumnDefinitions="14,4,*,4,48" Margin="0,0,0,3">
                                             <TextBlock Text="G" FontSize="11" VerticalAlignment="Center" Foreground="{DynamicResource TextControlForeground}"/>
-                                            <Slider x:Name="PART_HexGSlider" Grid.Column="2" Minimum="0" Maximum="255" OverridesDefaultStyle="True" Template="{StaticResource ColorPicker.ChannelSliderTemplate}"/>
+                                            <Slider x:Name="PART_HexGSlider" IsMoveToPointEnabled="True" Grid.Column="2" Minimum="0" Maximum="255" OverridesDefaultStyle="True" Template="{StaticResource ColorPicker.ChannelSliderTemplate}"/>
                                             <TextBox x:Name="PART_HexGTextBox" Grid.Column="4" Padding="4,5" FontSize="11" MaxLength="3" TextAlignment="Center" VerticalContentAlignment="Center"/>
                                         </Grid>
                                         <Grid ColumnDefinitions="14,4,*,4,48">
                                             <TextBlock Text="B" FontSize="11" VerticalAlignment="Center" Foreground="{DynamicResource TextControlForeground}"/>
-                                            <Slider x:Name="PART_HexBSlider" Grid.Column="2" Minimum="0" Maximum="255" OverridesDefaultStyle="True" Template="{StaticResource ColorPicker.ChannelSliderTemplate}"/>
+                                            <Slider x:Name="PART_HexBSlider" IsMoveToPointEnabled="True" Grid.Column="2" Minimum="0" Maximum="255" OverridesDefaultStyle="True" Template="{StaticResource ColorPicker.ChannelSliderTemplate}"/>
                                             <TextBox x:Name="PART_HexBTextBox" Grid.Column="4" Padding="4,5" FontSize="11" MaxLength="3" TextAlignment="Center" VerticalContentAlignment="Center"/>
                                         </Grid>
                                     </StackPanel>
@@ -306,22 +306,22 @@
                                     <StackPanel x:Name="PART_ArgbRow" Margin="0,6,0,0" Visibility="Collapsed">
                                         <Grid ColumnDefinitions="14,4,*,4,48" Margin="0,0,0,3">
                                             <TextBlock Text="A" FontSize="11" VerticalAlignment="Center" Foreground="{DynamicResource TextControlForeground}"/>
-                                            <Slider x:Name="PART_ASlider" Grid.Column="2" Minimum="0" Maximum="255" OverridesDefaultStyle="True" Template="{StaticResource ColorPicker.ChannelSliderTemplate}"/>
+                                            <Slider x:Name="PART_ASlider" IsMoveToPointEnabled="True" Grid.Column="2" Minimum="0" Maximum="255" OverridesDefaultStyle="True" Template="{StaticResource ColorPicker.ChannelSliderTemplate}"/>
                                             <TextBox x:Name="PART_ATextBox" Grid.Column="4" Padding="4,5" FontSize="11" MaxLength="3" TextAlignment="Center" VerticalContentAlignment="Center"/>
                                         </Grid>
                                         <Grid ColumnDefinitions="14,4,*,4,48" Margin="0,0,0,3">
                                             <TextBlock Text="R" FontSize="11" VerticalAlignment="Center" Foreground="{DynamicResource TextControlForeground}"/>
-                                            <Slider x:Name="PART_RSlider" Grid.Column="2" Minimum="0" Maximum="255" OverridesDefaultStyle="True" Template="{StaticResource ColorPicker.ChannelSliderTemplate}"/>
+                                            <Slider x:Name="PART_RSlider" IsMoveToPointEnabled="True" Grid.Column="2" Minimum="0" Maximum="255" OverridesDefaultStyle="True" Template="{StaticResource ColorPicker.ChannelSliderTemplate}"/>
                                             <TextBox x:Name="PART_RTextBox" Grid.Column="4" Padding="4,5" FontSize="11" MaxLength="3" TextAlignment="Center" VerticalContentAlignment="Center"/>
                                         </Grid>
                                         <Grid ColumnDefinitions="14,4,*,4,48" Margin="0,0,0,3">
                                             <TextBlock Text="G" FontSize="11" VerticalAlignment="Center" Foreground="{DynamicResource TextControlForeground}"/>
-                                            <Slider x:Name="PART_GSlider" Grid.Column="2" Minimum="0" Maximum="255" OverridesDefaultStyle="True" Template="{StaticResource ColorPicker.ChannelSliderTemplate}"/>
+                                            <Slider x:Name="PART_GSlider" IsMoveToPointEnabled="True" Grid.Column="2" Minimum="0" Maximum="255" OverridesDefaultStyle="True" Template="{StaticResource ColorPicker.ChannelSliderTemplate}"/>
                                             <TextBox x:Name="PART_GTextBox" Grid.Column="4" Padding="4,5" FontSize="11" MaxLength="3" TextAlignment="Center" VerticalContentAlignment="Center"/>
                                         </Grid>
                                         <Grid ColumnDefinitions="14,4,*,4,48">
                                             <TextBlock Text="B" FontSize="11" VerticalAlignment="Center" Foreground="{DynamicResource TextControlForeground}"/>
-                                            <Slider x:Name="PART_BSlider" Grid.Column="2" Minimum="0" Maximum="255" OverridesDefaultStyle="True" Template="{StaticResource ColorPicker.ChannelSliderTemplate}"/>
+                                            <Slider x:Name="PART_BSlider" IsMoveToPointEnabled="True" Grid.Column="2" Minimum="0" Maximum="255" OverridesDefaultStyle="True" Template="{StaticResource ColorPicker.ChannelSliderTemplate}"/>
                                             <TextBox x:Name="PART_BTextBox" Grid.Column="4" Padding="4,5" FontSize="11" MaxLength="3" TextAlignment="Center" VerticalContentAlignment="Center"/>
                                         </Grid>
                                     </StackPanel>
@@ -330,17 +330,17 @@
                                     <StackPanel x:Name="PART_HslRow" Margin="0,6,0,0" Visibility="Collapsed">
                                         <Grid ColumnDefinitions="14,4,*,4,48" Margin="0,0,0,3">
                                             <TextBlock Text="H" FontSize="11" VerticalAlignment="Center" Foreground="{DynamicResource TextControlForeground}"/>
-                                            <Slider x:Name="PART_HSlider" Grid.Column="2" Minimum="0" Maximum="360" OverridesDefaultStyle="True" Template="{StaticResource ColorPicker.ChannelSliderTemplate}"/>
+                                            <Slider x:Name="PART_HSlider" IsMoveToPointEnabled="True" Grid.Column="2" Minimum="0" Maximum="360" OverridesDefaultStyle="True" Template="{StaticResource ColorPicker.ChannelSliderTemplate}"/>
                                             <TextBox x:Name="PART_HTextBox" Grid.Column="4" Padding="4,5" FontSize="11" MaxLength="3" TextAlignment="Center" VerticalContentAlignment="Center"/>
                                         </Grid>
                                         <Grid ColumnDefinitions="14,4,*,4,48" Margin="0,0,0,3">
                                             <TextBlock Text="S" FontSize="11" VerticalAlignment="Center" Foreground="{DynamicResource TextControlForeground}"/>
-                                            <Slider x:Name="PART_SSlider" Grid.Column="2" Minimum="0" Maximum="100" OverridesDefaultStyle="True" Template="{StaticResource ColorPicker.ChannelSliderTemplate}"/>
+                                            <Slider x:Name="PART_SSlider" IsMoveToPointEnabled="True" Grid.Column="2" Minimum="0" Maximum="100" OverridesDefaultStyle="True" Template="{StaticResource ColorPicker.ChannelSliderTemplate}"/>
                                             <TextBox x:Name="PART_SHTextBox" Grid.Column="4" Padding="4,5" FontSize="11" MaxLength="3" TextAlignment="Center" VerticalContentAlignment="Center"/>
                                         </Grid>
                                         <Grid ColumnDefinitions="14,4,*,4,48">
                                             <TextBlock Text="L" FontSize="11" VerticalAlignment="Center" Foreground="{DynamicResource TextControlForeground}"/>
-                                            <Slider x:Name="PART_LSlider" Grid.Column="2" Minimum="0" Maximum="100" OverridesDefaultStyle="True" Template="{StaticResource ColorPicker.ChannelSliderTemplate}"/>
+                                            <Slider x:Name="PART_LSlider" IsMoveToPointEnabled="True" Grid.Column="2" Minimum="0" Maximum="100" OverridesDefaultStyle="True" Template="{StaticResource ColorPicker.ChannelSliderTemplate}"/>
                                             <TextBox x:Name="PART_LTextBox" Grid.Column="4" Padding="4,5" FontSize="11" MaxLength="3" TextAlignment="Center" VerticalContentAlignment="Center"/>
                                         </Grid>
                                     </StackPanel>
