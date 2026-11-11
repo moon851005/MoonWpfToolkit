@@ -33,12 +33,21 @@ jobs:
       - name: Pack
         run: dotnet pack MoonWpfToolkit.slnx -c Release --no-restore -o artifacts
 
+      - name: List packages
+        run: Get-ChildItem artifacts
+
+      # Windows 上 dotnet nuget push 的 glob 不認得正斜線路徑（artifacts/*.nupkg 會被當成檔名），
+      # 改用 PowerShell 逐檔推送。GitHub Packages 不收 .snupkg，故 --no-symbols。
       - name: Push to GitHub Packages
-        run: >
-          dotnet nuget push "artifacts/*.nupkg"
-          --source https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json
-          --api-key ${{ secrets.GITHUB_TOKEN }}
-          --skip-duplicate
+        run: |
+          Get-ChildItem artifacts\*.nupkg | ForEach-Object {
+            dotnet nuget push $_.FullName `
+              --source https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json `
+              --api-key ${{ secrets.GITHUB_TOKEN }} `
+              --skip-duplicate `
+              --no-symbols
+            if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          }
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
