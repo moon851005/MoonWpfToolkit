@@ -5,35 +5,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 
-
-	<!-- 套件識別名稱，GitHub Packages 用來對應到 repo 下的套件清單 -->
-	<!-- 建議格式：組織或作者.套件名稱，避免跟其他套件撞名 -->
-	<PackageId>moon851005.MoonWpfToolkit</PackageId>
-
-	<!-- 套件作者，顯示在套件資訊頁 -->
-	<Authors>moon851005</Authors>
-
+	<!-- 打包共用設定（作者、Repo、symbols、版本推算）集中在 repo 根目錄 Directory.Build.props -->
 	<!-- 套件用途簡述，會顯示在套件清單與搜尋結果中 -->
 	<Description>WPF 開發常用套件與工具方法整合</Description>
-
-	<!-- 對應的 GitHub repo，GitHub Packages 依此判斷套件歸屬 -->
-	<RepositoryUrl>https://github.com/moon851005/MoonWpfToolkit</RepositoryUrl>
-
-	<!-- 版本控制系統類型，通常搭配 RepositoryUrl 一起寫 -->
-	<RepositoryType>git</RepositoryType>
-
-	<!-- 授權條款，沒有的話 GitHub 套件頁面會顯示「無授權」 -->
-	<!-- 常見值：MIT、Apache-2.0、GPL-3.0-only 等，完整清單參考 SPDX -->
-	<PackageLicenseExpression>MIT</PackageLicenseExpression>
-
-	<!-- 讓 dotnet build 時自動產生 .nupkg，不用額外下 dotnet pack -->
-	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-
-	<!-- 是否在套件中包含 Symbol/PDB，方便除錯（發佈到 GitHub Packages 可選） -->
-	<IncludeSymbols>true</IncludeSymbols>
-
-	<!-- Symbol 套件格式，snupkg 是目前主流建議格式 -->
-	<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 
 	<!--忽略警告-->
 	<NoWarn>$(NoWarn);IDE0044</NoWarn>
@@ -54,13 +28,6 @@
 	<NoWarn>$(NoWarn);NU1902</NoWarn>
 	<NoWarn>$(NoWarn);NU1903</NoWarn>
   </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Nerdbank.GitVersioning" Version="3.10.91">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Moon.Services\Moon.Services.csproj" />
